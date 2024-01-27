@@ -34,11 +34,11 @@ make install
 Start two or more servers using different ports
 
 ```
-go-lb --type node --addr :8081
+golb --type node --addr :8081
 ```
 
 ```
-go-lb --type node --addr :8082
+golb --type node --addr :8082
 ```
 
 ### Load Balancer
@@ -46,7 +46,7 @@ go-lb --type node --addr :8082
 Start the Load Balancer and the urls of the existing servers
 
 ```
-go-lb --type lb --addr :8080 --urls http://localhost:8081,http://localhost:8082
+golb --type lb --addr :8080 --urls http://localhost:8081,http://localhost:8082
 ```
 
 ## Tests

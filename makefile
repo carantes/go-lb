@@ -16,10 +16,10 @@ install:
 	$(GOINSTALL)
 
 run-server1:
-	$(GORUN) cmd/server/main.go --type node --addr :8081
+	$(GORUN) main.go --type node --addr :8081
 
 run-server2:
-	$(GORUN) cmd/server/main.go --type node --addr :8082
+	$(GORUN) main.go --type node --addr :8082
 
 run-lb:
-	$(GORUN) cmd/server/main.go --type lb --addr :8080 --nodes localhost:8081,localhost:8082
+	$(GORUN) main.go --type lb --addr :8080 --urls http://localhost:8081,http://localhost:8082
