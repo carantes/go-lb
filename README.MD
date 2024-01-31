@@ -1,6 +1,6 @@
 # Go Load Balancer
 
-This is my own implementation of an API Load Balancer in Go using different algorithms, concurrent programming and synchronization techniques. Coding Challenges series by John Crickett https://codingchallenges.fyi/challenges/challenge-load-balancer/
+This is my own implementation of an Round-Robin API Load Balancer in Go using concurrent programming and synchronization techniques. Coding Challenges series by John Crickett https://codingchallenges.fyi/challenges/challenge-load-balancer/
 
 -   Active and Passive Healthchecks
 -   Healthcheck url on servers with checks dependent resources (Redis, DB, etc)
